@@ -1,0 +1,20 @@
+<form>
+    <div>
+        <input type="number" placeholder="Enter a number" id="num" required>
+    </div>
+    <div>
+        <input type="button" value="Factorial" onclick="factorial()">
+    </div>
+    <div>
+        <input type="number" placeholder="Result will be shown here" id="result" readonly>
+    </div>
+</form>
+<script>
+    function factorial(){
+        var n=parseInt(document.getElementById("num").value);
+        var f=1,i;
+        for(i=1;i<=n;i++)
+            f=f*i;
+        document.getElementById("result").value=f;
+    }
+</script>
